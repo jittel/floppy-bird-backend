@@ -1,19 +1,18 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Category extends Model {}
+class Chicken extends Model {}
 
-Category.init(
+Chicken.init(
     {
-        category_name: {
+        chicken_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
     },
     {
         sequelize,
-        timestamps: false,
     }
 );
 
-module.exports = Category;
+module.exports = Chicken;
