@@ -19,7 +19,7 @@ User.init(
     },
     eggs: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
     },
   },
   {
