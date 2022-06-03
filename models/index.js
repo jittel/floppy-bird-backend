@@ -12,4 +12,7 @@ Accessory.hasMany(User);
 Category.hasMany(Accessory);
 Accessory.belongsTo(Category);
 
+Chicken.hasMany(Accessory);
+Accessory.hasMany(Chicken);
+
 module.exports = { User, Category, Chicken, Accessory };
