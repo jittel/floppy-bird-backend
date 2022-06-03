@@ -11,7 +11,9 @@ module.exports = {
     },
     // Get a single user
     getSingleUser(req, res) {
-        User.findOne({ _id: req.params.userId })
+        User.findByPk(req.params.id, {
+            include:[Chicken]
+        })
             .select('-__v')
             .then((user) =>
                 !user
@@ -25,7 +27,7 @@ module.exports = {
             const newUser = await User.create(req.body)
             const newChicken = await Chicken.create({
                 chicken_name: req.body.chicken_name,
-                user_id: newUser.id
+                UserId: newUser.id
             })
             const token = jwt.sign({
                 userId: newUser.id
