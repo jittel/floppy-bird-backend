@@ -23,6 +23,7 @@ module.exports = {
             .catch((err) => res.status(500).json(err));
     },
     async createUser(req, res) {
+        console.log(req.body)
         try {
             const newUser = await User.create(req.body)
             const newChicken = await Chicken.create({

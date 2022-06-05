@@ -9,6 +9,10 @@ const PORT = process.env.PORT || 3001;
 
 const { User, Chicken } = require('./models')
 
+var cors = require('cors')
+
+app.use(cors()) // Use this after the variable declaration
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
