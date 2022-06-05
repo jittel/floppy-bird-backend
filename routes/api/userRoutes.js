@@ -3,7 +3,8 @@ const {
   getUsers,
   getSingleUser,
   createUser,
-  login
+  login,
+  verifyToken
 } = require('../../controllers/userController.js');
 
 // /api/users
@@ -14,5 +15,7 @@ router.route('/:userId').get(getSingleUser);
 
 // /api/login
 router.route('/login').post(login)
+
+router.route('/verifyToken').get(verifyToken)
 
 module.exports = router;
