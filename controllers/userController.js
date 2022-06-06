@@ -12,9 +12,8 @@ module.exports = {
     // Get a single user
     getSingleUser(req, res) {
         User.findByPk(req.params.id, {
-            include:[Chicken]
+            include: [Chicken]
         })
-            .select('-__v')
             .then((user) =>
                 !user
                     ? res.status(404).json({ message: 'No user with that ID' })
@@ -80,4 +79,7 @@ module.exports = {
             .then(() => res.json({ message: 'User and associated apps deleted!' }))
             .catch((err) => res.status(500).json(err));
     },
+    verifyToken(req, res) {
+        res.json({userId:req.user})
+    }
 }
