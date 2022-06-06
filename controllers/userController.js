@@ -14,7 +14,6 @@ module.exports = {
         User.findByPk(req.params.id, {
             include: [Chicken]
         })
-            .select('-__v')
             .then((user) =>
                 !user
                     ? res.status(404).json({ message: 'No user with that ID' })

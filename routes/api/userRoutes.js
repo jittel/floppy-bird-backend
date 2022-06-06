@@ -10,12 +10,13 @@ const {
 // /api/users
 router.route('/').get(getUsers).post(createUser);
 
-// /api/users/:userId
-router.route('/:userId').get(getSingleUser);
-
-// /api/login
+// /api/users/login
 router.route('/login').post(login)
 
+// /api/users/verifyToken
 router.route('/verifyToken').get(verifyToken)
+
+// /api/users/:userId
+router.route('/:userId').get(getSingleUser);
 
 module.exports = router;
