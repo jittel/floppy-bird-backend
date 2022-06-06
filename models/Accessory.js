@@ -9,6 +9,14 @@ Accessory.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        accessory_price: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        accessory_img: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
     },
     {
         sequelize,

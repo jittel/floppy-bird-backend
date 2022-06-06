@@ -1,0 +1,32 @@
+[
+    {
+        "accessory_name": "Cap",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/8Pj6QHp.png"
+    },
+    {
+        "accessory_name": "Cowboy Hat",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/yWURB9I.png"
+    },
+    {
+        "accessory_name": "Crown",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/LTcWx18.png"
+    },
+    {
+        "accessory_name": "Flower Crown",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/OG2kM59.png"
+    },
+    {
+        "accessory_name": "Hair",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/IzBdV1d.png"
+    },
+    {
+        "accessory_name": "Spinny Hat",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/8JS46r8.png"
+    }
+]
