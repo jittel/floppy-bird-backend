@@ -1,0 +1,32 @@
+[
+    {
+        "accessory_name": "Basketball",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/xXpp6NX.png"
+    },
+    {
+        "accessory_name": "Beer",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/t8wWQdo.png"
+    },
+    {
+        "accessory_name": "Knives",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/JpLZKjP.png"
+    },
+    {
+        "accessory_name": "Money",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/fGp7rQ4.png"
+    },
+    {
+        "accessory_name": "Scepter",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/OMRTaQT.png"
+    },
+    {
+        "accessory_name": "Yaass Nails",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/S4XGIgD.png"
+    }
+]

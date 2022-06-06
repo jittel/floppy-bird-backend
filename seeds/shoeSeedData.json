@@ -1,0 +1,32 @@
+[
+    {
+        "accessory_name": "Basketball Shoes",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/Xy5QLkF.png"
+    },
+    {
+        "accessory_name": "Boots with the Fur",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/nqTpmLy.png"
+    },
+    {
+        "accessory_name": "Cowboy Boots",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/E3YJF8a.png"
+    },
+    {
+        "accessory_name": "Crocs",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/f9rHGtW.png"
+    },
+    {
+        "accessory_name": "Platforms",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/XLAAbnv.png"
+    },
+    {
+        "accessory_name": "Slides",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/yvNFoxx.png"
+    }
+]
