@@ -16,7 +16,7 @@ router.route('/login').post(login)
 // /api/users/verifyToken
 router.route('/verifyToken').get(verifyToken)
 
-// /api/users/:userId
-router.route('/:userId').get(getSingleUser);
+// /api/users/:id
+router.route('/:id').get(getSingleUser);
 
 module.exports = router;
