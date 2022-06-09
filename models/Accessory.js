@@ -17,6 +17,10 @@ Accessory.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        accessory_zoom: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
     },
     {
         sequelize,
