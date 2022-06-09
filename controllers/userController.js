@@ -44,12 +44,24 @@ module.exports = {
             res.status(400).json(err)
         }
     },
+    //updates egg count
+    updateEgg(req, res) {
+        console.log(req.body)
+        User.update(req.body, {
+            where: {
+                id: req.params.id
+            }
+        }).then(foundUser => {
+            res.json(foundUser)
+        })
+    },
     //log in to user
     login(req, res) {
         User.findOne({
             where: {
                 username: req.body.username
-            }
+            },
+            include: [Chicken]
         }).then(foundUser => {
             if (!foundUser) {
                 return res.status(401).json({ msg: "invalid login credentials" })
@@ -80,6 +92,6 @@ module.exports = {
             .catch((err) => res.status(500).json(err));
     },
     verifyToken(req, res) {
-        res.json({userId:req.user})
+        res.json({ userId: req.user })
     }
 }
