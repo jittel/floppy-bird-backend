@@ -46,6 +46,7 @@ module.exports = {
     },
     //updates egg count
     updateEgg(req, res) {
+        console.log(req.body)
         User.update(req.body, {
             where: {
                 id: req.params.id
