@@ -1,0 +1,18 @@
+[
+    {
+        "chicken_name": "joof",
+        "UserId": 1
+    },
+    {
+        "chicken_name": "chimken",
+        "UserId": 2
+    },
+    {
+        "chicken_name": "yicken",
+        "UserId":3
+    },
+    {
+        "chicken_name": "fleep",
+        "UserId": 4
+    }
+]
