@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS floppy_db;
+CREATE DATABASE floppy_db;

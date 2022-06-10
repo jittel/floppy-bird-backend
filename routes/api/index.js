@@ -1,8 +1,13 @@
 const router = require('express').Router();
-// const courseRoutes = require('./courseRoutes');
-// const studentRoutes = require('./studentRoutes');
+const userRoutes = require('./userRoutes')
+const chickenRoutes = require('./chickenRoutes')
+const accessoryRoutes = require('./accessoryRoutes')
+const categoryRoutes = require('./categoryRoutes')
 
-// router.use('/courses', courseRoutes);
-// router.use('/students', studentRoutes);
+router.use('/users', userRoutes);
+router.use('/chickens', chickenRoutes);
+router.use('/accessories', accessoryRoutes);
+router.use('/categories', categoryRoutes);
+
 
 module.exports = router;

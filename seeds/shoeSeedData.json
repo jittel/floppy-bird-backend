@@ -1,0 +1,44 @@
+[
+    {
+        "accessory_name": "Basketball Shoes",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/Xy5QLkF.png",
+        "accessory_zoom": "https://i.imgur.com/nwQjeB5.png",
+        "CategoryId": 3
+    },
+    {
+        "accessory_name": "Boots with the Fur",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/nqTpmLy.png",
+        "accessory_zoom": "https://i.imgur.com/5za63rB.png",
+        "CategoryId": 3
+    },
+    {
+        "accessory_name": "Cowboy Boots",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/E3YJF8a.png",
+        "accessory_zoom": "https://i.imgur.com/TU9giwe.png",
+        "CategoryId": 3
+    },
+    {
+        "accessory_name": "Crocs",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/f9rHGtW.png",
+        "accessory_zoom": "https://i.imgur.com/lYENcA1.png",
+        "CategoryId": 3
+    },
+    {
+        "accessory_name": "Platforms",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/XLAAbnv.png",
+        "accessory_zoom": "https://i.imgur.com/ngNcCCK.png",
+        "CategoryId": 3
+    },
+    {
+        "accessory_name": "Slides",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/yvNFoxx.png",
+        "accessory_zoom": "https://i.imgur.com/iLp7CPq.png",
+        "CategoryId": 3
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "accessory_name": "Basketball",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/xXpp6NX.png",
+        "accessory_zoom": "https://i.imgur.com/jtaZ0jY.png",
+        "CategoryId": 2
+    },
+    {
+        "accessory_name": "Beer",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/t8wWQdo.png",
+        "accessory_zoom": "https://i.imgur.com/9NJXxQj.png",
+        "CategoryId": 2
+    },
+    {
+        "accessory_name": "Knives",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/JpLZKjP.png",
+        "accessory_zoom": "https://i.imgur.com/QvoDuli.png",
+        "CategoryId": 2
+    },
+    {
+        "accessory_name": "Money",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/fGp7rQ4.png",
+        "accessory_zoom": "https://i.imgur.com/6U9vIk0.png",
+        "CategoryId": 2
+    },
+    {
+        "accessory_name": "Scepter",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/OMRTaQT.png",
+        "accessory_zoom": "https://i.imgur.com/d25SXcl.png",
+        "CategoryId": 2
+    },
+    {
+        "accessory_name": "Yaass Nails",
+        "accessory_price": 1,
+        "accessory_img": "https://i.imgur.com/S4XGIgD.png",
+        "accessory_zoom": "https://i.imgur.com/c64SkOL.png",
+        "CategoryId": 2
+    }
+]
