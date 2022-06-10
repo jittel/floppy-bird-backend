@@ -9,4 +9,5 @@ router.use('/chickens', chickenRoutes);
 router.use('/accessories', accessoryRoutes);
 router.use('/categories', categoryRoutes);
 
+
 module.exports = router;

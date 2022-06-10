@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { Accessory, Category } = require('../models');
+const { Accessory, Category, User, Chicken } = require('../models');
 
 const hatSeedData = require('./hatSeedData.json');
 const shoeSeedData = require('./shoeSeedData.json');
@@ -15,7 +15,15 @@ const seedMe = async () => {
     const hats = await Accessory.bulkCreate(hatSeedData);
     const shoes = await Accessory.bulkCreate(shoeSeedData);
     const arms = await Accessory.bulkCreate(armSeedData);
-
+    const newUser = await User.create({
+        username: "jeff",
+        password: "password",
+    })
+    const newChicken = await Chicken.create({
+        chicken_name:"jeff2"
+    })
+    await newUser.addAccessory(2)
+    
     process.exit(0);
 };
 

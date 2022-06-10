@@ -1,4 +1,4 @@
-const { User, Chicken } = require('../models')
+const { User, Chicken, Accessory } = require('../models')
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
@@ -12,14 +12,16 @@ module.exports = {
     // Get a single user
     getSingleUser(req, res) {
         User.findByPk(req.params.id, {
-            include: [Chicken]
+            include: [Chicken, Accessory]
         })
             .then((user) =>
                 !user
                     ? res.status(404).json({ message: 'No user with that ID' })
                     : res.json(user)
             )
-            .catch((err) => res.status(500).json(err));
+            .catch((err) => {res.status(500).json(err)
+            console.log(err)
+            });
     },
     async createUser(req, res) {
         console.log(req.body)

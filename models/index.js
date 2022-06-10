@@ -6,8 +6,16 @@ const Accessory = require('./Accessory');
 User.hasOne(Chicken);
 Chicken.belongsTo(User);
 
-User.hasMany(Accessory);
-Accessory.hasMany(User);
+User.belongsToMany(Accessory,
+    {
+        through: "UserAccessory"
+    }
+);
+Accessory.belongsToMany(User,
+    {
+        through: "UserAccessory"
+    }
+);
 
 Category.hasMany(Accessory);
 Accessory.belongsTo(Category);
@@ -15,4 +23,4 @@ Accessory.belongsTo(Category);
 Chicken.hasMany(Accessory);
 Accessory.hasMany(Chicken);
 
-module.exports = { User, Category, Chicken, Accessory };
+module.exports = { User, Category, Chicken, Accessory};
