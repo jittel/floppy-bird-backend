@@ -9,6 +9,18 @@ Chicken.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        equip_shoes: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        equip_hats: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        equip_arms: {
+            type: DataTypes.STRING,
+            allowNull: true
+        }
     },
     {
         sequelize,
