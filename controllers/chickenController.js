@@ -17,5 +17,16 @@ module.exports = {
                     : res.json(chicken)
             )
             .catch((err) => res.status(500).json(err));
-    }
+    },
+
+    changeAccessories(req, res) {
+        console.log(req.body)
+        Chicken.update(req.body, {
+            where: {
+                id: req.params.id
+            }
+        }).then(foundChicken => {
+            res.json(foundChicken)
+        })
+    },
 }
