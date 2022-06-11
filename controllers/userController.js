@@ -95,5 +95,28 @@ module.exports = {
     },
     verifyToken(req, res) {
         res.json({ userId: req.user })
+    },
+
+    addAccessory(req, res) {
+        User.findByPk(req.params.id)
+        .then((user) =>{
+            if (!user) {
+                console.log('user not found')
+                return null
+            }
+            return Accessory.findOne({where: {id:req.body.accessoryId}}).then((accessory) => {
+                if(!accessory) {
+                    console.log('accessory not found')
+                return null
+                }
+                user.addAccessory(accessory)
+                console.log(`added accessory ${accessory.id} to User ${user.id}`)
+                return res.json({message: 'accessory added'})
+            })
+
+        })
+            .catch((err) => {
+                console.log(err)
+            })
     }
 }

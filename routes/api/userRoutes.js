@@ -5,7 +5,8 @@ const {
   createUser,
   updateEgg,
   login,
-  verifyToken
+  verifyToken,
+  addAccessory
 } = require('../../controllers/userController.js');
 
 // /api/users
@@ -21,6 +22,8 @@ router.route('/login').post(login)
 router.route('/verifyToken').get(verifyToken)
 
 // /api/users/:id
+router.route('/accessory/:id').post(addAccessory);
 router.route('/:id').get(getSingleUser).put(updateEgg);
+
 
 module.exports = router;
